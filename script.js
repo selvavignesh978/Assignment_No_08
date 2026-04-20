@@ -15,6 +15,7 @@ const addBtn = document.createElement("button");
 const editBtn = document.createElement("button");
 addBtn.textContent = "Add Task";
 editBtn.textContent = "Update Task";
+list.style.display = "";
 
 // Append / Connect element
 taskContainer.appendChild(list);
@@ -57,7 +58,7 @@ function displayTask(taskData) {
         const listItem = document.createElement("li");
       // Flex layout
         listItem.style.display = "flex";
-        listItem.style.justifyContent = "space-between"; 
+        // listItem.style.justifyContent = "space-between"; 
         listItem.style.alignItems = "center";
         listItem.style.padding = "10px";
         listItem.style.border = "1px solid #ccc";
@@ -124,4 +125,3 @@ addBtn.style.color = "white";
 addBtn.style.border = "none";
 addBtn.style.padding = "5px 10px";
 addBtn.style.borderRadius = "15px";
-
