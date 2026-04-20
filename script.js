@@ -116,12 +116,12 @@ editBtn.style.backgroundColor = "orange";
 editBtn.style.color = "white";
 editBtn.style.border = "none";
 editBtn.style.padding = "5px 10px";
-editBtn.style.borderRadius = "10px";
+editBtn.style.borderRadius = "15px";
 
 
 addBtn.style.backgroundColor = "green";
 addBtn.style.color = "white";
 addBtn.style.border = "none";
 addBtn.style.padding = "5px 10px";
-addBtn.style.borderRadius = "10px";
+addBtn.style.borderRadius = "15px";
 
