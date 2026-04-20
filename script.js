@@ -48,8 +48,6 @@ addBtn.addEventListener("click", () => {
   inputState = "";
 });
 
-
-
 // Step 2 : To Fetch/read/get all task
 function displayTask(taskData) {
     // Clear the current list before updating
@@ -59,10 +57,12 @@ function displayTask(taskData) {
         const listItem = document.createElement("li");
       // Flex layout
         listItem.style.display = "flex";
-        listItem.style.justifyContent = "space-between"; // 🔥 key change
+        listItem.style.justifyContent = "space-between"; 
         listItem.style.alignItems = "center";
         listItem.style.padding = "10px";
         listItem.style.border = "1px solid #ccc";
+        listItem.style.gap = "5px";
+        listItem.style.margin = "5px";
 
 
         // spacing between buttons
@@ -70,8 +70,8 @@ function displayTask(taskData) {
 
         listItem.innerHTML = `
             ${task}
-            <button onclick="modifyTask(${index})">edit</button>
-            <button onclick="removeTask(${index})">delete</button>
+            <button onclick="modifyTask(${index})" class="btn btn-warning align-self-end border-radius-15px padding-5px">edit</button>
+            <button onclick="removeTask(${index})" class="btn btn-danger align-self-end border-radius-15px padding-5px">delete</button>
         `;
         
         list.appendChild(listItem); // <ul><li>Wake up...
@@ -116,10 +116,12 @@ editBtn.style.backgroundColor = "orange";
 editBtn.style.color = "white";
 editBtn.style.border = "none";
 editBtn.style.padding = "5px 10px";
+editBtn.style.borderRadius = "10px";
 
 
 addBtn.style.backgroundColor = "green";
 addBtn.style.color = "white";
 addBtn.style.border = "none";
 addBtn.style.padding = "5px 10px";
+addBtn.style.borderRadius = "10px";
 
